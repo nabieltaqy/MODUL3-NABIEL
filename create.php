@@ -6,6 +6,7 @@
     include('connect.php');
 
 // (2) Buatlah perkondisian untuk memeriksa apakah permintaan saat ini menggunakan metode POST
+    if($_SERVER['REQUEST METHOD'] == 'POST') {
 
 // 
 
@@ -37,7 +38,7 @@
     echo "<meta http-equiv='refresh' content='1 url=list_mobil.php'>";
     }
 
-
+}
 // (7) Tutup koneksi ke database setelah selesai menggunakan database
 $mysqli_close($connect);
 ?>
